@@ -12,7 +12,7 @@
 
 <meta name="author" content="Dania M. Rodriguez" />
 
-<meta name="date" content="2017-04-23" />
+<meta name="date" content="2017-08-11" />
 
 <title>dataMeta: Making and appending a data dictionary to an R dataset</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">dataMeta: Making and appending a data dictionary to an R dataset</h1>
 <h4 class="author"><em>Dania M. Rodriguez</em></h4>
-<h4 class="date"><em>2017-04-23</em></h4>
+<h4 class="date"><em>2017-08-11</em></h4>
 
 
 
@@ -1018,14 +1018,14 @@ $dictionary
 37            value The number of cases per data field type                                 0 to 1930
 
 $last_edit_date
-[1] &quot;2017-04-23 13:01:05 AST&quot;
+[1] &quot;2017-08-11 20:01:20 -04&quot;
 
 $author
 [1] &quot;Dania Rodriguez&quot;</code></pre>
 <p> </p>
 <p>The user can also export the data dicitonary using as .csv or .xlsx by itlself and also save the data with all of its attributes, as shown below:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Exporting dictionary only:</span>
-dict_only &lt;-<span class="st"> </span><span class="kw">attributes</span>(my.new.data)$dictionary
+dict_only &lt;-<span class="st"> </span><span class="kw">attributes</span>(my.new.data)<span class="op">$</span>dictionary
 <span class="kw">write.csv</span>(dict_only, <span class="st">&quot;dict_only.csv&quot;</span>)
 
 <span class="co"># Saving as .rds (dataset with appended dictionary)</span>
@@ -1047,7 +1047,7 @@ dict_only &lt;-<span class="st"> </span><span class="kw">attributes</span>(my.ne
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
